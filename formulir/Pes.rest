@@ -1,0 +1,36 @@
+GET http://localhost:3000/pesawat
+
+###
+GET http://localhost:3000/pesawat/1
+
+###
+POST  http://localhost:3000/pesawat/
+Content-Type: application/json
+
+{
+"name": "kiki",
+"asal": "yogya",
+"tujuan": "jakarta",
+"jumlah": "1",
+"tipe": "Ticket Bisnis",
+"tanggal": "08-12-2023",
+"telpon": "08222"
+}
+
+###
+PATCH   http://localhost:3000/pesawat/1
+Content-Type: application/json
+
+{
+"name": "kiki kuy",
+"asal": "yogya",
+"tujuan": "jakarta",
+"jumlah": "1",
+"tipe": "Ticket Bisnis",
+"tanggal": "08-12-2023",
+"telpon": "08222"
+}
+
+###
+DELETE   http://localhost:3000/pesawat/2
+
